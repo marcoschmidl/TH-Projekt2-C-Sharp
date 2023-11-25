@@ -1,0 +1,23 @@
+﻿<Page x:Class="GUI.Welcome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="Welcome">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\start_up.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        
+        <Button Name="SignUp"  Margin="82,498,80,300" Background="Transparent" BorderBrush="Transparent"
+                Click="SignUp_Click"></Button>
+        <Button Name="Login"  Margin="82,604,80,196" Background="Transparent" BorderBrush="Transparent"
+                Click="Login_Click"></Button>
+        
+    </Grid>
+</Page>

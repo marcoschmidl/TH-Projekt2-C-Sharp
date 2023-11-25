@@ -1,0 +1,34 @@
+﻿<Page x:Class="GUI.HOME"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="HOME">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\home.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        
+        <Button Name="edit" Background="Transparent" BorderBrush="Transparent" Click="edit_Click" Margin="420,10,24,808" RenderTransformOrigin="3.255,0.728">
+            <Image Source=".\GUI-Masken\pen.png"></Image>
+        </Button>
+        
+        <Button Name="open_profile" Background="Transparent" BorderBrush="Transparent" Click="open_profile_Click" Margin="24,10,420,808" RenderTransformOrigin="3.255,0.728">
+            <Image Source=".\GUI-Masken\open_profile.png"></Image>
+        </Button>
+
+        <Button Name="tracking" Margin="202,348,202,424" Background="Transparent" BorderBrush="Transparent" Click="tracking_Click"></Button>
+        <Button Name="report" Margin="355,323,49,449" Background="Transparent" BorderBrush="Transparent" Click="report_Click"></Button>
+        <Button Name="weight" Margin="50,323,354,449" Background="Transparent" BorderBrush="Transparent" Click="weight_Click"></Button>
+        <TextBlock Name="kcal" Margin="150,90,102,646" Background="Transparent" Foreground="white" FontSize="80"></TextBlock>
+        <TextBlock Name="feedBlock" Margin="84,616,84,137" Foreground="White" FontSize="17" TextAlignment="Center"></TextBlock>
+
+        <Button Name ="logout" Margin="218,788,219,23" Click="logout_Click" Background="Transparent" BorderBrush="Transparent"></Button>
+        
+    </Grid>
+</Page>

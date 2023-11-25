@@ -1,0 +1,47 @@
+﻿<Page x:Class="GUI.EDIT_PROFILE"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="EDIT_PROFILE">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\edit_profile.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+
+        <Button Name="back" Background="Transparent" BorderBrush="Transparent" Click="back_Click" Margin="10,10,424,798">
+            <Image Source=".\GUI-Masken\back.png"></Image>
+        </Button>
+        <Button Name="next" Margin="85,758,84,50" Background="Transparent" Click="next_Click"></Button>
+
+        <TextBox Name="ageInput" Margin="68,266,67,542" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></TextBox>
+        <TextBox Name="bodysizeInput" Margin="68,356,67,452" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></TextBox>
+        <TextBox Name="weightInput" Margin="68,444,67,366" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></TextBox>
+
+        <Button Name="help" Margin="402,599,56,232" Background="Transparent" BorderBrush="Transparent" Click="help_Click"></Button>
+
+        <Button Name="man" Margin="82,535,257,275" Click="man_Click" Background="Transparent" BorderBrush="Transparent" ></Button>
+        <CheckBox Name="cbman" Margin="146,590,318,248" IsThreeState="True" Checked="cbman_Checked" Unchecked="cbman_Checked"></CheckBox>
+
+        <Button Name="woman" Margin="257,535,82,274" Click="woman_Click" Background="Transparent" BorderBrush="Transparent" ></Button>
+        <CheckBox Name="cbwoman" Margin="320,591,144,248" IsThreeState="True" Checked="cbwoman_Checked" Unchecked="cbwoman_Checked" ></CheckBox>
+
+        <Button Name="activity1" Margin="56,634,361,153" Background="Transparent" BorderBrush="Transparent" Click="activity1_Click"></Button>
+        <Button Name="activity2" Margin="132,634,285,153" Background="Transparent" BorderBrush="Transparent" Click="activity2_Click"></Button>
+        <Button Name="activity3" Margin="209,634,208,153" Background="Transparent" BorderBrush="Transparent" Click="activity3_Click"></Button>
+        <Button Name="activity4" Margin="285,634,132,153" Background="Transparent" BorderBrush="Transparent" Click="activity4_Click"></Button>
+        <Button Name="activity5" Margin="362,634,55,153" Background="Transparent" BorderBrush="Transparent" Click="activity5_Click"></Button> 
+        
+        <CheckBox Name="cbActivity1" Margin="80,709,384,128" IsThreeState="True" Checked="cbActivity1_Checked" Unchecked="cbActivity1_Checked"></CheckBox>
+        <CheckBox Name="cbActivity2" Margin="157,709,307,128" IsThreeState="True" Checked="cbActivity2_Checked" Unchecked="cbActivity2_Checked" ></CheckBox>
+        <CheckBox Name="cbActivity3" Margin="232,709,232,128" IsThreeState="True" Checked="cbActivity3_Checked" Unchecked="cbActivity3_Checked"></CheckBox>
+        <CheckBox Name="cbActivity4" Margin="310,709,154,128" IsThreeState="True" Checked="cbActivity4_Checked" Unchecked="cbActivity4_Checked"></CheckBox>
+        <CheckBox Name="cbActivity5" Margin="387,709,77,128" IsThreeState="True" Checked="cbActivity5_Checked" Unchecked="cbActivity5_Checked"></CheckBox>
+
+    </Grid>
+</Page>

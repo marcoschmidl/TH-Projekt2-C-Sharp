@@ -1,0 +1,101 @@
+﻿[TestCleanup]
+This attribute is like the opposite of TestInitialize, each time 
+the function is decorated with this attribute it will execute when test execution finishes. 
+So,after execution of each and every test if we need to perform some cleanup operation
+then we can write code within this function - important after the test is done.
+
+[TestInitialize]
+This attribute is needed when we want to run a function before execution of a test.
+For example we want to run the same test 5 times and want to set some property value 
+before running each time. In this scenario we can define one function and decorate
+the function with a TestInitialize attribute.
+
+https://www.c-sharpcorner.com/UploadFile/dacca2/test-initialize-and-test-setup/
+
+
+----------------------------------------------------
+
+[TestMethode] 
+Zeigt an welche Methoden getestet werden sollen 
+
+https://www.kiltandcode.com/2019/06/16/best-practices-for-writing-unit-tests-in-csharp-for-bulletproof-code/
+
+[Serializible]
+Serialisierung ist der Prozess der Konvertierung eines Objekts in einen Bytestream, um das Objekt zu
+speichern oder in den Arbeitsspeicher, eine Datenbank oder eine Datei zu übertragen. Hauptzweck ist
+es, den Zustand eines Objekts zu speichern, um es bei Bedarf neu erstellen zu können. Der umgekehrte
+Vorgang wird als Deserialisierung bezeichnet.
+
+
+Info zu ID auto generation 
+https://entityframework.net/database-generated
+
+Annotations 
+https://www.infoworld.com/article/3543302/how-to-use-data-annotations-in-csharp.html
+
+
+ForeingKey Annotation 
+ForeignKey Signature: [ForeignKey(name string)]
+https://www.entityframeworktutorial.net/code-first/foreignkey-dataannotations-attribute-in-code-first.aspx
+
+
+Note: EF 6 does not include default conventions for One-to-One 
+    and Many-to-Many relationships. You need to configure them
+    either using Fluent API or DataAnnotation.
+
+
+/* 
+ * 
+ * 
+[TestClass]
+public class DbInit
+{
+    [TestMethod]
+    public void TestDbInit()
+    {
+        using (CALContext db = new CALContext())
+        {
+            db.TestEts.Add(new TestEt("Marco", 69));
+            db.SaveChanges();
+        }
+
+        Thread.Sleep(2000);
+
+        using (CALContext db = new CALContext())
+        {
+            TestEt marco = db.TestEts.Find("Marco");
+            db.TestEts.Remove(marco);
+            db.SaveChanges();
+        }
+    }
+}
+using System.ComponentModel.DataAnnotations;
+
+namespace Core.Persistence
+{
+public class TestEt
+{// Nur benötigt beim löschen und neu erstellen der Datenbank
+    [Key]
+    public string Name { get; set; }
+    public int Zahl { get; set; }
+
+    public TestEt() { }
+
+    public TestEt(string name, int zahl)
+    {
+        Name = name;
+        Zahl = zahl;
+    }
+}
+
+}
+*/
+
+  /*        
+             DateTimeOffset midnight = new DateTimeOffset(new DateTime(2021, 1, 7, 0, 0, 0));
+             List<DateTimeOffset> consumptions = new List<DateTimeOffset>();
+             consumptions.Add(new DateTimeOffset(new DateTime(2021, 1, 6, 7, 0, 0)));
+             consumptions.Add(new DateTimeOffset(new DateTime(2021, 1, 6, 15, 0, 0)));
+             consumptions.Add(new DateTimeOffset(new DateTime(2021, 1, 7, 8, 0, 0)));
+
+      /**/  

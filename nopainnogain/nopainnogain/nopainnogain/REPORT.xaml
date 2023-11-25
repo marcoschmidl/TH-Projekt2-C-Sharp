@@ -1,0 +1,27 @@
+﻿<Page x:Class="GUI.REPORT"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="REPORT">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\report.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        
+        <Button Name="back" Background="Transparent" BorderBrush="Transparent" Click="back_Click" Margin="10,10,424,798">
+            <Image Source=".\GUI-Masken\back.png"></Image>
+        </Button>
+        <TextBlock Name="CReport" Margin="66,356,68,0"></TextBlock>
+        <DataGrid Name="reportData" RowBackground="Transparent" BorderBrush="Transparent"
+                  HorizontalGridLinesBrush="Transparent"
+                  VerticalGridLinesBrush="Transparent"
+                  FontSize="15" Margin="66,356,68,10"></DataGrid>
+        
+    </Grid>
+</Page>

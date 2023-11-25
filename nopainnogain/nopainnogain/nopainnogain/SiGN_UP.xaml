@@ -1,0 +1,27 @@
+﻿<Page x:Class="GUI.SiGN_UP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="SiGN_UP">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\sign_up.PNG" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+
+        <Button Name="back" Background="Transparent" BorderBrush="Transparent" Click="back_Click" Margin="10,10,424,798">
+            <Image Source=".\GUI-Masken\back.png"></Image>
+        </Button>
+        <TextBox Name="nameInput" Margin="68,316,67,493" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"/>
+        <TextBox Name="lastNameInput" Margin="68,405,67,404" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></TextBox>
+        <TextBox Name="emailInput" Margin="68,494,67,315" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></TextBox>
+        <PasswordBox Name="passwordInput" Margin="68,584,67,225" FontSize="30" Foreground="White" Background="Transparent" BorderBrush="Transparent"></PasswordBox>
+        <Button Name="next" Margin="85,759,84,51" Background="Transparent" BorderBrush="Transparent" Click="next_Click"></Button>
+    
+    </Grid>
+</Page>

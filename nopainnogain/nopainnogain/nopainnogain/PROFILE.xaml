@@ -1,0 +1,28 @@
+﻿<Page x:Class="GUI.PROFILE"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="PROFILE">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\profile.png"></ImageBrush>
+        </Grid.Background>
+        
+        <Button Name="back" Background="Transparent" BorderBrush="Transparent" Click="back_Click" Margin="10,10,424,798">
+            <Image Source=".\GUI-Masken\back.png"></Image>
+        </Button>
+        <TextBlock Name="nameProfile" Margin="87,330,87,481" FontSize="30"></TextBlock>
+        <TextBlock Name="emailProfile" Margin="87,408,87,403" FontSize="30"></TextBlock>
+        <TextBlock Name="bodysizeProfile" Margin="87,487,87,324" FontSize="30"></TextBlock>
+        <TextBlock Name="goalweightProfile" Margin="87,564,87,247" FontSize="30"></TextBlock>
+        <TextBlock Name="goalProfile" Margin="87,643,87,168" FontSize="30"></TextBlock>
+        <TextBlock Name="activityProfile" Margin="87,720,87,91" FontSize="30"></TextBlock>
+        
+    </Grid>
+</Page>

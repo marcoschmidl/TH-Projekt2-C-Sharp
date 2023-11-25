@@ -1,0 +1,33 @@
+﻿<Page x:Class="GUI.SET_GOAL"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="SET_GOAL">
+
+    <Grid>
+       
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\set_goal.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        
+        <Button Name="back" Background="Transparent" BorderBrush="Transparent" Click="back_Click" Margin="10,10,424,798">
+            <Image Source=".\GUI-Masken\back.png"></Image>
+        </Button>
+
+        <Button Name ="glose" Margin="91,351,93,443" Background="Transparent" BorderBrush="Transparent" Click="glose_Click"></Button>
+        <Button Name ="ggain" Margin="91,441,93,353" Background="Transparent" BorderBrush="Transparent" Click="ggain_Click"></Button>
+        <Button Name ="gmaintain"  Margin="93,539,92,255" Background="Transparent" BorderBrush="Transparent" Click="gmaintain_Click"></Button>
+        
+        <CheckBox Name="lose" IsThreeState="True" Checked="lose_Checked" Unchecked="lose_Checked" VerticalAlignment="Center" Margin="65,375,400,465"></CheckBox>
+        <CheckBox Name="gain" IsThreeState="True" Checked="gain_Checked" Unchecked="gain_Checked" VerticalAlignment="Center" Margin="65,464,400,376"></CheckBox>
+        <CheckBox Name="maintain" IsThreeState="True" Checked="maintain_Checked" Unchecked="maintain_Checked" VerticalAlignment="Center" Margin="65,562,400,278"></CheckBox>
+        <TextBox Name="weightGoalInput" Foreground="White" FontSize="30" Background="Transparent" BorderBrush="Transparent" Margin="99,666,98,150"></TextBox>
+        
+        <Button Name="next" Margin="85,758,84,50" Background="Transparent" Click="next_Click"></Button>
+    
+    </Grid>
+</Page>

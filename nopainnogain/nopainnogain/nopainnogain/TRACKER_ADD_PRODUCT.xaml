@@ -1,0 +1,46 @@
+﻿<Page x:Class="GUI.TRACKER_ADD_PRODUCT"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="854" d:DesignWidth="480" Background="White"
+      Title="TRACKER_ADD_PRODUCT">
+
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource=".\GUI-Masken\tracker_filled.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        
+        <TextBox Name="pNameInput" Margin="66,390,67,421" FontSize="30">Produktname</TextBox>
+        <TextBox Name="kcalInput" Margin="66,447,67,363" FontSize="30">kcal pro 100g</TextBox>
+        <TextBox Name="proteinInput" Margin="66,503,67,307" FontSize="30">Proteine pro 100g</TextBox>
+        <TextBox Name="carbsInput" Margin="66,559,67,250" FontSize="30">Kohlenhydrate pro 100g</TextBox>
+        <TextBox Name="fatInput" Margin="66,615,67,193" FontSize="30">Fettanteil pro 100g</TextBox>
+        <TextBox Name="amountInput" Margin="66,672,67,138" FontSize="30">Refernzwert in Gramm</TextBox>
+        <TextBox Name="quantityInput" Margin="66,729,67,81" FontSize="30">Verzehrte Menge</TextBox>
+        
+        <Button Name="addProduct" Margin="39,788,330,30" Click="addProduct_Click" Background="Transparent" BorderBrush="Transparent" ></Button>
+        <Button Name="showProduct" Margin="184,788,185,30" Click="showProduct_Click" Background="Transparent" BorderBrush="Transparent" ></Button>
+        <Button Name="addtoConsumption" Margin="330,788,39,30" Click="addtoConsumption_Click" Background="Transparent" BorderBrush="Transparent" ></Button>
+        
+        <Button Name="back" Background="Transparent" BorderBrush="Transparent" Click="back_Click" Margin="10,10,424,798">
+            <Image Source=".\GUI-Masken\back.png"></Image>
+        </Button>
+
+        <ComboBox Name="Products" Margin="104,322,67,488">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}" FontSize="20"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <CheckBox Name="product_added" Checked="product_added_Checked" Unchecked="product_added_Checked" Margin="84,832,380,0" ></CheckBox>
+   
+    </Grid>
+</Page>
